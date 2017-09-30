@@ -275,18 +275,7 @@ public class SetApp {
 		}
 	}
 	
-	//将mm:ss字符串转换为毫秒数
-	public static int timeToInt(String time){
-		int result = -1;
-		try {
-			String[] timeString = time.split(":");
-			result = (Integer.parseInt(timeString[0])*60 + Integer.parseInt(timeString[1]))*1000;
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("将mm:ss字符串转换为毫秒数异常");
-		}
-		return result;
-	}
+
 	
 	//获取元素的坐标   获取元素横向中心轴的y（hight）值
 	public static int getMidHight (WebElement WE){

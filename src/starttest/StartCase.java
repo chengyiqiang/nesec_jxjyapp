@@ -9,6 +9,7 @@ import controller.KCXX;
 import controller.Login;
 import controller.MLKS;
 import controller.SetApp;
+import controller.videoSet;
 import jxl.Sheet;
 import jxl.write.Label;
 import jxl.write.WritableSheet;
@@ -49,12 +50,12 @@ public class StartCase {
 						SetApp.swipeSection("down", 2000);
 					}
 					//视频学习课程学习
-					KCXX.watchVideo(AppData.childNameList.get(0));
-					System.out.println(KCXX.getVideoHasPlayedTime() + "/" + KCXX.getVideoTotalTime());					
-				    KCXX.pauseOrPlay();			
-				    KCXX.pauseOrPlay();
-				    KCXX.dragSeekBar("front");
-				    KCXX.dragSeekBar("back");
+					videoSet.watchVideo(AppData.childNameList.get(0));
+					System.out.println(videoSet.getVideoHasPlayedTime() + "/" + videoSet.getVideoTotalTime());					
+					videoSet.pauseOrPlay();			
+					videoSet.pauseOrPlay();
+					videoSet.dragSeekBar("front");
+					videoSet.dragSeekBar("back");
 //					KCXX.learnKCXX();
 				    
 				}catch (Exception e){
