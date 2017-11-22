@@ -76,7 +76,7 @@ public class KCXX {
 				//¿ÎºóÁ·Ï°ÄÚÈİ
 				if(AppData.isdyexam){
 					for (int j = 0; j < 10; j++) {
-						MLKS.chooseSingleAnswer(MLKS.getAnswer());
+						MLKS.answerQuestions();
 					}
 					SetApp.driver.findElement(By.id("com.nesec.jxjy_phone:id/btn_commit")).click();
 				}

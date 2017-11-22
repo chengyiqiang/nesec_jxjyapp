@@ -26,9 +26,11 @@ public class Login {
 		try {
 			SetApp.driver.findElement(By.id("com.nesec.jxjy_phone:id/tv_city_zone")).click();
 			Thread.sleep(5000);
-			SetApp.driver.findElement(By.name(province)).click();
+			SetApp.driver.findElement(By.name(province)).click(); //appium 1.7.6 不支持findElementByName(locator)切换为下行代码方式
+//			SetApp.driver.findElementByAndroidUIAutomator("test(\"" +province+ "\")").click();
 			Thread.sleep(1000);
-			SetApp.driver.findElement(By.name(city)).click();		
+			SetApp.driver.findElement(By.name(city)).click();		//appium 1.7.6 不支持findElementByName(locator)切换为下行代码方式
+//			SetApp.driver.findElementByAndroidUIAutomator("test(\"" +city+ "\")").click(); 
 		}catch (Exception e){
 			e.printStackTrace();
 			SetApp.screenShot("switchCity");

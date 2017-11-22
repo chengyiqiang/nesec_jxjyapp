@@ -64,11 +64,16 @@ public class StartCase {
 		
 			}
 				break;
-//			case "课程学习":
-//			{
-//				KCXX
-//			}
-//				break;
+			case "习题练习":
+			{
+				SetApp.getElementByTextAndBy(By.id("com.nesec.jxjy_phone:id/tv_common_title"), "随机练习").click();
+				SetApp.checkFace();
+				//做10题习题练习
+				for (int i = 0; i < 10; i++) {
+					MLKS.answerQuestions();
+				}
+			}
+				break;
 //			case "课程学习":
 //			{
 //				KCXX

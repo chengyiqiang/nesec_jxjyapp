@@ -9,10 +9,8 @@ import java.io.File;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
-
 import org.apache.commons.collections.functors.ForClosure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -38,7 +36,7 @@ public class SetApp {
 	
 	public static void setApp(){
 		dcp = new DesiredCapabilities();
-		dcp.setCapability("deviceName",AppData.devicesName);
+		dcp.setCapability("deviceName",AppData.deviceName);
 		dcp.setCapability("platformName",AppData.platformName);
 		dcp.setCapability("platformVersion",AppData.version);
 		dcp.setCapability("appPackage",AppData.appPackage);

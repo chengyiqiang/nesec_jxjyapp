@@ -10,7 +10,7 @@ public class AppData {
 	
 	//数据信息
 	//设备名称
-	public static String devicesName = "faf6d064";
+	public static String deviceName = "faf6d064";
 	//设备操作平台
 	public static String platformName = "Android";
 //	public static String platformVersion = "";
